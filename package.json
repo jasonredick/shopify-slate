@@ -1,0 +1,37 @@
+{
+  "name": "starter-theme",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Jason Redick",
+  "description": "A barebones, Slate compatible, starting point for developing Shopify themes.",
+  "keywords": [
+    "shopify",
+    "theme"
+  ],
+  "bugs": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.1.0",
+    "@shopify/slate-tools": "1.0.0-beta.14",
+    "babel-preset-shopify": "^16.2.0",
+    "cssnano": "^4.1.8",
+    "eslint-plugin-shopify": "^19.0.0",
+    "stylelint-config-prettier": "^3.0.4",
+    "stylelint-config-shopify": "^5.0.0",
+    "tailwindcss": "^0.7.4"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "scripts": {
+    "start": "slate-tools start",
+    "watch": "slate-tools start --skipFirstDeploy",
+    "build": "slate-tools build",
+    "deploy": "slate-tools build && slate-tools deploy",
+    "zip": "slate-tools build && slate-tools zip"
+  }
+}
